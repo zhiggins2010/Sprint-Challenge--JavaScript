@@ -30,26 +30,58 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Describe the biggest difference between `.forEach` & `.map`.
 
+    `.forEach` runs a given function once for each element in an array.
+
+    `.map` creates a new array with the result of the given function.
+
 2. What is the difference between a function and a method?
+
+    a function is declared on the global scope and method is declared on an object.
 
 3. What is closure?
 
+    Closure describes the inability of any methods or functions to see inside of another object to view it's objects and methods. Methods can, however, reach outside of their object and invoke functions, methods, and variables from higher scopes.
+
 4. Describe the four rules of the 'this' keyword.
 
+        1. Implicit Binding
+
+        'this' references the object to the left of the dot '.' at the time the function is invoked.
+
+        2. Explicit Binding
+
+        'this' references what is stated in the '()' when the function is called.
+        .call takes the arguments individually, one-by-one and imedietly invokes the function.
+        .apply takes the arguments together as an array and imedietly invokes the function.
+        .bind takes the arguments individually, one-by-one and creates a new function rather than invoking the previous function.
+
+
+
+        3. New Binding
+
+        Using 'new' tells JavaScript to create a new object using the same paramaters with the arguments passed in at the time 'new' is called.
+
+        4. Window Binding
+
+        When using 'this' without defining what 'this' is referencing, it will reference the Window object (the global scope, encompasing all of the code). You can bind the property using "window.`insert property here`:" but that is dangerous to do at the global scope. "Strict Mode" can be invoked by calling "'use strict'" in the object, which will cause window binding to return an error rather than being alowed. 
+
+
 5. Why do we need super() in an extended class?
+
+    super() calls the constructor from the parent class
 
 ## Project Set up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add TL as collaborator on Github.
-- [ ] Clone your OWN version of Repo (Not Lambda's by mistake!).
-- [ ] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
-- [ ] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
-- [ ] You are now ready to build this project with your preferred IDE
-- [ ] Implement the project on your Branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [ x] Create a forked copy of this project.
+- [ x] Add TL as collaborator on Github.
+- [ x] Clone your OWN version of Repo (Not Lambda's by mistake!).
+- [ x] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
+- [ x] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
+- [ x] You are now ready to build this project with your preferred IDE
+- [ x] Implement the project on your Branch, committing changes regularly.
+- [ x] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project:
 
